@@ -2,6 +2,12 @@
 using namespace std;
 
 int main() {
-    cout << "Welcome to OOPS Banner App!" << endl;
+
+    cout << " *****    *****    *****    ***** " << endl;
+    cout << "*     *  *     *  *     *  *     " << endl;
+    cout << "*     *  *     *  *****    *****  " << endl;
+    cout << "*     *  *     *  *             * " << endl;
+    cout << " *****    *****   *        *****  " << endl;
+
     return 0;
 }
