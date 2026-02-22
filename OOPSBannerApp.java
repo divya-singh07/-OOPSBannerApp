@@ -26,12 +26,20 @@ public class OOPSBannerApp {
         String s6 = "       * ";
         String s7 = " ******* ";
 
-        System.out.println(String.join(" ", o1, o1, p1, s1));
-        System.out.println(String.join(" ", o2, o2, p2, s2));
-        System.out.println(String.join(" ", o3, o3, p3, s3));
-        System.out.println(String.join(" ", o4, o4, p4, s4));
-        System.out.println(String.join(" ", o5, o5, p5, s5));
-        System.out.println(String.join(" ", o6, o6, p6, s6));
-        System.out.println(String.join(" ", o7, o7, p7, s7));
+        // Create array to store all banner lines
+        String[] bannerLines = new String[7];
+
+        bannerLines[0] = String.join(" ", o1, o1, p1, s1);
+        bannerLines[1] = String.join(" ", o2, o2, p2, s2);
+        bannerLines[2] = String.join(" ", o3, o3, p3, s3);
+        bannerLines[3] = String.join(" ", o4, o4, p4, s4);
+        bannerLines[4] = String.join(" ", o5, o5, p5, s5);
+        bannerLines[5] = String.join(" ", o6, o6, p6, s6);
+        bannerLines[6] = String.join(" ", o7, o7, p7, s7);
+
+        // Print using enhanced for loop
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
     }
 }
